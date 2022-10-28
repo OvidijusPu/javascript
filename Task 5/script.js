@@ -26,8 +26,16 @@ console.log(resultForDogs);
 const resultForAge = users.filter(user => user.age >= 18);
 console.log(resultForAge); */
 
-function haveDogs([]) {
-  if (users.hasDog == true) {
-    return hasDog;
-  }
+function filterDogOwers(arr) {
+  result = users.filter(user => user.hasDog == true);
+  console.log(result);
 }
+
+filterDogOwers(users);
+
+function filterAdults(arr) {
+  result = users.filter(user => user.age >= 18);
+  console.log(result);
+}
+
+filterAdults(users);
